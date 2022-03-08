@@ -1,0 +1,59 @@
+body {
+  background-color: #18c4b5;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.shadow {
+  max-width: 400px;
+  box-shadow: 4px 4px 12px #000300;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.bulb {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.conteiner>img { 
+  width: 60%;
+  margin-bottom: 5%;
+}
+
+.ul {
+  width: 100%;
+  text-align: start;
+}
+
+ul {
+  list-style: none;
+}
+
+.conteiner>button{
+  width: 30%;
+}
+
+.on { 
+  background-color: #ffff00;
+}
+
+.off { 
+  background-color: #888080;
+}
+ 

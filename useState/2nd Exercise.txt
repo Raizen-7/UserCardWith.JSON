@@ -1,0 +1,32 @@
+import { React,  useState } from 'react';
+import users from '../users.json';
+
+
+
+const User = () => {
+    
+    const [ user, setUser ] = useState( users[getRandom()]);
+
+   
+
+    const changeUser = () => { 
+        setUser(users[getRandom()])
+    } 
+
+
+    return (
+        <div >
+          <h1> {user.name.title} {user.name.first} {user.name.last} </h1>
+          <div className='conteiner'>
+            <div>
+                <img src = { user.picture.large } alt ="" />
+            </div>
+            <div>
+                <button onClick={changeUser}>Cambiar Usuario</button> 
+            </div>
+          </div>
+        </div>
+    );
+};
+const getRandom = () => Math.floor(Math.random() * users.length);
+export default User;
